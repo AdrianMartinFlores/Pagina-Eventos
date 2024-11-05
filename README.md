@@ -1,5 +1,7 @@
 PALETA DE COLORES:
 https://coolors.co/3454d1-f4b942-c1eeff-22211c-e0e0e0
+
+color body : #009FB7
 Aquí tienes más ideas de páginas para complementar su proyecto de eventos y distribuir el trabajo entre los 6 integrantes:
 
 Landing Page:
