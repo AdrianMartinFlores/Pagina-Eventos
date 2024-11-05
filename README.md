@@ -1,10 +1,50 @@
 PALETA DE COLORES:
-https://coolors.co/3454d1-f4b942-c1eeff-22211c-e0e0e0
+/* CSS HEX */
+--maize: #f4e76eff;
+--icterine: #f7fe72ff;
+--light-green: #8ff7a7ff;
+--moonstone: #009fb7ff;
+--dark-green: #002500ff;
 
-color body : #009FB7
-Aquí tienes más ideas de páginas para complementar su proyecto de eventos y distribuir el trabajo entre los 6 integrantes:
+-nav-
+  <nav>
+        <ul class="nav-bar" class="text">
+            <li class="inicio"><a class="inicio" href="#inicio">INICIO</a></li>
+            <li class="ul-element"><a class="informacion" href="#informacion" onclick="informacionFestival">INFORMACION DEL FESTIVAL</a></li>
+            <li class="ul-element"><a href="artistas.html" target="_blank">ARTISTAS INVITADOS</a></li>
+            <li class="ul-element"><a href="#educacion">COMPRA TU ENTRADA</a></li>
+            <li class="ul-element"><a href="#contactame">UBICACIONES</a></li>
+            <li class="ul-element"><a href="#contactame">CONTACTO</a></li>
+        </ul>
+    </nav>
 
-Landing Page:
+    --style--
+    .nav-bar {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 8px 8px 8px 8px;
+    display: flex;
+    justify-content: space-around; 
+    background-color: #002500;
+    color: white;
+    padding: 1vb;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    size: 0.5rem;
+}
+.nav-bar li {
+    margin-right: 20px;
+}
+
+.nav-bar li:last-child {
+    margin-right: 0;
+}
+
+---
 
 Como ya planearon, será la página de presentación que introduzca el sitio y enlace a la lista de eventos. Aquí pueden incluir también una breve sección de "Sobre Nosotros" y un formulario de contacto sencillo.
 Home Page:
