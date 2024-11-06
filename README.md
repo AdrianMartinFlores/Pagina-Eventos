@@ -2,7 +2,6 @@ IMPORTAR FUENTE->
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
 PALETA DE COLORES:
 /* CSS HEX */
 --maize: #f4e76eff;
@@ -12,13 +11,13 @@ PALETA DE COLORES:
 --dark-green: #002500ff;
 
 -nav-
-  <nav>
+      <nav>
         <ul class="nav-bar" class="text">
-            <li class="inicio"><a class="inicio" href="#inicio">INICIO</a></li>
-            <li class="ul-element"><a class="informacion" href="#informacion" onclick="informacionFestival">INFORMACION DEL FESTIVAL</a></li>
-            <li class="ul-element"><a href="artistas.html" target="_blank">ARTISTAS INVITADOS</a></li>
+            <li class="logo"><a href="#">FLY</a></li>
+            <li class="ul-element"><a href="#">INICIO</a></li>
+            <li class="ul-element"><a href="#quien-soy">INFORMACION DEL CONCIERTO</a></li>
+            <li class="ul-element"><a href="#mis-proyectos"> UBICACIÓN</a></li>
             <li class="ul-element"><a href="#educacion">COMPRA TU ENTRADA</a></li>
-            <li class="ul-element"><a href="#contactame">UBICACIONES</a></li>
             <li class="ul-element"><a href="#contactame">CONTACTO</a></li>
         </ul>
     </nav>
@@ -28,26 +27,50 @@ PALETA DE COLORES:
     list-style: none;
     text-decoration: none;
     margin: 0;
+    height: 55px;
     padding: 8px 8px 8px 8px;
-    display: flex;
-    justify-content: space-around; 
-    background-color: #002500;
+    display: flex; 
+    justify-content: space-between; /* Change to space-between */
+    align-items: center; /* Vertically align items to the center */
+    gap: 60px;
+    background: linear-gradient(to left, rgb(175, 29, 136), black); /* Add gradient */
     color: white;
-    padding: 1vb;
+    padding-right: 50px; /* Adjust this value to move the links to the left */
 }
 
-a{
+.nav-bar .logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    padding-left: 30px;
+    font-size: xx-large;
+    letter-spacing: 8px;
+    font-family: kanit;
+    font-weight: 900;
+}
+
+.nav-bar a {
+    color: white;
     text-decoration: none;
-    color: white;
-    size: 0.5rem;
-}
-.nav-bar li {
-    margin-right: 20px;
+    font-family: kanit;
 }
 
-.nav-bar li:last-child {
-    margin-right: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(123 20 95);
 }
+
+/* Add this at the beginning or end of your CSS file */
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+PALETA DE COLORES:
+https://coolors.co/d7865b-ef5d60-ec4067-af1d88-311847
 
 ---
 

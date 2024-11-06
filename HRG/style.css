@@ -1,0 +1,151 @@
+.nav-bar {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    height: 55px;
+    padding: 8px 8px 8px 8px;
+    display: flex; 
+    justify-content: space-between; /* Change to space-between */
+    align-items: center; /* Vertically align items to the center */
+    gap: 60px;
+    background: linear-gradient(to left, rgb(175, 29, 136), black); /* Add gradient */
+    color: white;
+    padding-right: 50px; /* Adjust this value to move the links to the left */
+}
+
+.nav-bar .logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    padding-left: 30px;
+    font-size: xx-large;
+    letter-spacing: 8px;
+    font-family: kanit;
+    font-weight: 900;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: kanit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(123 20 95);
+}
+
+/* Add this at the beginning or end of your CSS file */
+
+
+/* WHO ARE WE SECTION */
+
+.presentation{
+    min-height: 930px;
+    width: 100%;
+    display: flex;
+}
+
+.presText{
+    width: 50%;
+    height: inherit;
+    -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.presText h1, p{
+    color: white;
+    font-family: kanit;
+    position: relative;
+    top: 350px;
+}
+
+.presText h1{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.presText p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 20px;
+    width: 60%; /* Adjust the width to make the paragraph smaller */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    margin-top: 30px;
+}
+
+.presImg {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add this to position the overlay correctly */
+}
+
+.presImg video{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    pointer-events: none; /* Allows clicks to pass through the overlay */
+    transition: background-color 1s ease-in-out; /* Smooth transition */
+}
+
+.black-overlay.visible {
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+}
+
+@-webkit-keyframes slide-in-blurred-bottom {
+    0% {
+        -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-filter: blur(40px);
+                filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred-bottom {
+    0% {
+        -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-filter: blur(40px);
+                filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+    }
+}
