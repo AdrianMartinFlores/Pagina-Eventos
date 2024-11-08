@@ -51,7 +51,7 @@ a{
     outline: none; 
     border-color: rgb(253, 172, 66);
 }
-.contact input[type="submit"] {
+.botonEnviar {
     background-color: rgb(253, 172, 66);
     color: white;
     padding: 0.8rem 2rem;
@@ -60,7 +60,7 @@ a{
     font-size: 1.6rem;
     cursor: pointer;
 }
-.contact input[type="submit"]:hover {
+.botonEnviar:hover {
     background-color: rgb(189, 109, 4);
 }
 .contact{
