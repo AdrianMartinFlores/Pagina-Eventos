@@ -85,10 +85,6 @@ main {
     transition: transform 0.6s;
 }
 
-.artist-card:hover .card-inner {
-    transform: rotateY(180deg);
-}
-
 .front-card, .back-card {
     position: absolute;
     width: 100%;
@@ -125,3 +121,28 @@ img {
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    .title-page {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .artist-card {
+        max-width: 90%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-page {
+        font-size: 1.5rem;
+    }
+
+    .artist-card {
+        max-width: 100%;
+    }
+}
