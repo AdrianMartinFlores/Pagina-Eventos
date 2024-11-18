@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgb(157, 82, 137);
+    background: rgb(123,20,95,1);
 }
 .nav-bar {
     list-style: none;
@@ -20,6 +20,7 @@ body{
     left: 0; /* Ensure it starts from the left edge */
     right: 0; /* Ensure it spans to the right edge */
     z-index: 1000; /* Ensure it is above other content */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .nav-bar .logo {
@@ -39,9 +40,9 @@ body{
 }
 
 
+
 .acordeon {
     width: 65%;
-    border: 1px solid #ddd;
     align-items: center;
     justify-content: center;
     height: auto;
@@ -49,12 +50,10 @@ body{
     font-family: Kanit, sans-serif;
     box-shadow: 0px 0px 100px rgb(255, 0, 187);
     border-radius: 20px;
-    border: 7px solid rgba(255, 0, 187, 0.517);
 }
 
 .acordeonheader {
     font-family: Kanit, sans-serif;
-    background-color: #f0f0f0;
     cursor: pointer;
     padding: 10px;
     text-align: left;
@@ -65,8 +64,7 @@ body{
     font-weight: bold;
     color: black;
     border-top: 1px solid #ddd;
-    background: linear-gradient(rgb(255, 0, 187), rgb(175, 29, 136, 1), rgb(255, 0, 187)); /* Adjust the angle and percentage values for position and spread */
-    
+
 }
 
 .acordeonheader:hover {
@@ -102,7 +100,12 @@ body{
     justify-content: center;
     display: flex;
     width: 100%;
+    margin-top: 90px;
 }
+.acordeon-item{
+    box-shadow: 0px 0px 100px rgb(255, 0, 187);
+}
+
 
 @media (max-width: 1200px) {
     .acordeon {
@@ -123,14 +126,7 @@ body{
         width: 90%;
     }
 
-    .nav-bar {
-        flex-direction: column;
-        padding: 10px;
-    }
 
-    .nav-bar li {
-        margin-bottom: 10px;
-    }
 
     .acordeonheader {
         font-size: 1rem;
@@ -159,7 +155,7 @@ body{
     }
 }
 .inicio{
-    margin-top: 35px;
+    margin-top: 75px;
     display: flex;
     font-family: Kanit, sans-serif;
 }
