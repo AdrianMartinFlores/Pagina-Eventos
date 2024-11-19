@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(123,20,95,1);
+}
+.nav-bar {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    height: 55px;
+    padding: 8px 20px; /* Adjust padding to control spacing inside the nav bar */
+    display: flex; 
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Vertically align items to the center */
+    gap: 20px; /* Adjust gap between items */
+    background: linear-gradient(135deg, rgb(175, 29, 136, 1) 25%, rgba(0, 0, 0, 1) 100%); /* Adjust the angle and percentage values for position and spread */
+    color: white;
+    position: fixed; /* Make the nav bar fixed */
+    top: 0; /* Position it at the top of the page */
+    left: 0; /* Ensure it starts from the left edge */
+    right: 0; /* Ensure it spans to the right edge */
+    z-index: 1000; /* Ensure it is above other content */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar .logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    padding-left: 20px; /* Adjust padding to control spacing */
+    font-size: xx-large;
+    letter-spacing: 8px;
+    font-family: kanit;
+    font-weight: 900;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: kanit;
+    padding: 0 10px; /* Add padding to control spacing around links */
+}
+
+
+
+.acordeon {
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 20px auto;
+    font-family: Kanit, sans-serif;
+    box-shadow: 0px 0px 100px rgb(255, 0, 187);
+    border-radius: 20px;
+}
+
+.acordeonheader {
+    font-family: Kanit, sans-serif;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    border-top: 1px solid #ddd;
+
+}
+
+.acordeonheader:hover {
+    color: white;
+    background-color: rgba(255, 0, 187, 0.517);
+    transition: color 0.2s ease;
+    border: 7px solid rgba(255, 0, 187, 0.517);
+
+}
+
+.contenidoacordeon {
+    font-family: Kanit, sans-serif;
+    font-size: 1.1rem;
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+    font-weight: normal;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.contenidoacordeon.open {
+    display: block;
+    max-height: 1000px;
+    background-color: aliceblue;
+}
+
+.principal {
+    font-family: Kanit, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 90px;
+}
+.acordeon-item{
+    box-shadow: 0px 0px 100px rgb(255, 0, 187);
+}
+
+
+@media (max-width: 1200px) {
+    .acordeon {
+        width: 80%;
+    }
+
+    .acordeonheader {
+        font-size: 1rem;
+    }
+
+    .contenidoacordeon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .acordeon {
+        width: 90%;
+    }
+
+
+
+    .acordeonheader {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .contenidoacordeon {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .acordeon {
+        width: 95%;
+    }
+
+    .acordeonheader {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contenidoacordeon {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+.inicio{
+    margin-top: 75px;
+    display: flex;
+    font-family: Kanit, sans-serif;
+}
+.inicio1{
+    width: 50%;
+   text-align: center;
+    justify-content: center;
+
+}
+.inicio2{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+h2{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 30%;
+    height: 20vh;
+    padding-left: 5vh;
+}
