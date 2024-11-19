@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    background-color: plum;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para los cuadros */
+    gap: 50px; /* Espaciado entre cuadros */
+    width: 100%;
+    max-width: 800px; /* Limita el ancho máximo */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-content: center; /* Centra los elementos verticalmente */
+}
+
+.cuadro {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadro img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pie-de-foto {
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.descripcion {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.nav-bar {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    height: 55px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, rgb(175, 29, 136, 1) 25%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-bar .logo {
+    margin-right: auto;
+    padding-left: 20px;
+    font-size: xx-large;
+    letter-spacing: 8px;
+    font-family: kanit;
+    font-weight: 900;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: kanit;
+    padding: 0 10px;
+}
+.pie-de-foto{
+    color: darkorchid;
+}

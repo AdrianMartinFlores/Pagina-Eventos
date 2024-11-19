@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-bar" class="text">
+            <ul class="nav-bar" class="text">
+                <li class="logo"><a href="AMF/index.html">FLY</a></li>
+                <li class="ul-element"><a href="AMF/index.html">INICIO</a></li>
+                <li class="ul-element"><a href="HRG/info.html">INFORMACION DEL CONCIERTO</a></li>
+                <li class="ul-element"><a href="Fernando Baena/ArtistasInvitados.html">ARTISTAS INVITADOS</a></li>
+                <li class="ul-element"><a href="Josete/compraEntradas.html">COMPRA TU ENTRADA</a></li>
+                <li class="ul-element"><a href="Carlos/Ubuicacion.html"> UBICACIÓNES</a></li>
+                <li class="ul-element"><a href="Bruno/contact.html">CONTACTO</a></li>
+                <li class="ul-element"><a href="DANI/FAQs.html">FAQ</a></li>
+            </ul>>
+        </ul>
+    </nav>
+    
+    <div class="centrado">
+        <form class="contact" method="POST">
+            <div class="text-articles">
+                <h1>Seccion de atencion al cliente</h1>
+                <div class="form1">
+                    <label for="name">Nombre Completo: *</label>
+                    <input  name="name" type="text" id="name" placeholder="Nombre Completo" required>
+                </div>
+                <div class="form2">
+                    <label>Razon del Contacto: </label>
+                    <input id="razonContacto" class="contexto" type="text" placeholder="Razon del Contacto">
+                </div>
+
+                <div class="form3">
+                    <label for="email">Email: *</label>
+                    <input name="email" class="contexto" type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form3">
+                    <label for="text">COD Postal: *</label>
+                    <input id="codigoPostal" class="contexto" type="text"  id="email" placeholder="COD Postal">
+                </div>
+
+                <div class="form5">
+                    <button class="botonEnviar" onclick="mostrarValor()">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="contact.js">
+    </script>
+</body>
+
+</html>
