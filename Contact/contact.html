@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
-    
 </head>
 
 <body>
     <nav>
         <ul class="nav-bar" class="text">
-            <li class="inicio"><a class="inicio" href="#inicio">INICIO</a></li>
-            <li class="ul-element"><a class="informacion" href="#informacion" onclick="informacionFestival">INFORMACION DEL FESTIVAL</a></li>
-            <li class="ul-element"><a href="artistas.html" target="_blank">ARTISTAS INVITADOS</a></li>
+            <li class="logo"><a href="#">FLY</a></li>
+            <li class="ul-element"><a href="#">INICIO</a></li>
+            <li class="ul-element"><a href="#quien-soy">INFORMACION DEL CONCIERTO</a></li>
+            <li class="ul-element"><a href="#mis-proyectos"> UBICACIÓN</a></li>
             <li class="ul-element"><a href="#educacion">COMPRA TU ENTRADA</a></li>
-            <li class="ul-element"><a href="#contactame">UBICACIONES</a></li>
             <li class="ul-element"><a href="#contactame">CONTACTO</a></li>
         </ul>
     </nav>
@@ -28,30 +26,31 @@
                 <h1>Seccion de atencion al cliente</h1>
                 <div class="form1">
                     <label for="name">Nombre Completo: *</label>
-                    <input type="text" name="name" id="name" placeholder="Nombre Completo" required>
+                    <input  name="name" type="text" id="name" placeholder="Nombre Completo" required>
                 </div>
                 <div class="form2">
                     <label>Razon del Contacto: </label>
-                    <input class="contexto" type="text" placeholder="Razon del Contacto">
+                    <input id="razonContacto" class="contexto" type="text" placeholder="Razon del Contacto">
                 </div>
 
                 <div class="form3">
                     <label for="email">Email: *</label>
-                    <input class="contexto" type="email" name="email" id="email" placeholder="Email" required>
+                    <input name="email" class="contexto" type="email" id="email" placeholder="Email" required>
                 </div>
                 
                 <div class="form3">
                     <label for="text">COD Postal: *</label>
-                    <input class="contexto" type="text" name="email" id="email" placeholder="COD Postal">
+                    <input id="codigoPostal" class="contexto" type="text"  id="email" placeholder="COD Postal">
                 </div>
 
                 <div class="form5">
-                    <input type="submit" value="Enviar">
+                    <button class="botonEnviar" onclick="mostrarValor()">Enviar</button>
                 </div>
             </div>
         </form>
     </div>
-
+    <script src="contact.js">
+    </script>
 </body>
 
 </html>
