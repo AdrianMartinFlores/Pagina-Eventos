@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     background: rgb(123,20,95,1);
+    font-family: 'Kanit', sans-serif;
 }
 .nav-bar {
     list-style: none;

@@ -1,15 +1,16 @@
-/* Importar una fuente moderna desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
 /* Estilos generales para el cuerpo */
-body {
-    font-family: 'Roboto', sans-serif; /* Usar la fuente importada */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Fondo claro para una apariencia moderna */
-    color: #333; /* Color de texto oscuro para buen contraste */
+ 
+html, body {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(-135deg, rgb(123,20,95,1) 1%, rgba(0, 0, 0, 1) 100%);
 }
-
+ 
+body.fade-in {
+    opacity: 1;
+}
+ 
 /* Estilos para el contenedor principal */
 .cabecera {
     text-align: center;
@@ -19,7 +20,7 @@ body {
     border-radius: 8px; /* Bordes redondeados */
     margin-bottom: 20px;
 }
-
+ 
 .cajaDescripcion {
     border: 1px solid #ddd; /* Borde claro */
     display: flex;
@@ -32,56 +33,74 @@ body {
     background-color: #fff; /* Fondo blanco */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     border-radius: 8px; /* Bordes redondeados */
+    position: relative;
+    top: 150px;
 }
-
+ 
 /* Estilos para la descripción */
 .descripcion {
     text-align: center;
 }
-
+ 
 /* Estilos para la barra de navegación */
 .nav-bar {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    justify-content: center; /* Centrar los elementos */
-    background-color: #333; /* Fondo oscuro */
-    border-radius: 8px; /* Bordes redondeados */
-}
-
-.nav-bar li {
-    margin: 10px; /* Añadir margen */
-}
-
-.nav-bar a {
     text-decoration: none;
+    margin: 0;
+    height: 7vh; /* Converted from 55px */
+    padding: 1vh 2.5vw; /* Converted from 8px 20px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw; /* Converted from 20px */
+    background: linear-gradient(135deg, rgb(175, 29, 136, 1) 25%, rgba(0, 0, 0, 1) 100%);
     color: white;
-    padding: 10px 20px; /* Añadir padding */
-    border-radius: 4px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Transición suave */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 1.25vh 3.125vh rgba(0, 0, 0, 0.5); /* Converted from 10px 25px */
 }
-
-.nav-bar a:hover {
-    background-color: #555; /* Cambiar color al pasar el ratón */
+ 
+.nav-bar .logo {
+    margin-right: auto;
+    padding-left: 2.5vw; /* Converted from 20px */
+    font-size: 2em; /* Converted from xx-large */
+    letter-spacing: 0.5em; /* Converted from 8px */
+    font-family: kanit;
+    font-weight: 900;
 }
-
+ 
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: kanit;
+    padding: 0 1vw; /* Converted from 10px */
+}
+ 
+.ul-element a {
+    color: white;
+    text-decoration: none;
+    font-family: kanit;
+    font-size: 0.8em;
+}
+ 
 /* Estilos para los botones */
 button {
-    background-color: #3454d1; /* Color de fondo moderno */
-    color: white;
+    background-color: #f7fe72ff; /* Color de fondo para los botones */
+    color: #333; /* Color de texto */
     border: none;
     padding: 10px 20px;
     border-radius: 4px; /* Bordes redondeados */
     cursor: pointer;
     transition: background-color 0.3s; /* Transición suave */
 }
-
+ 
 button:hover {
-    background-color: #2a3e91; /* Cambiar color al pasar el ratón */
+    background-color: #e6e65e; /* Cambiar color al pasar el ratón */
 }
-
+ 
 /* Estilos para la ventana emergente */
 .info-ventana {
     display: none; /* Ocultar por defecto */
@@ -95,12 +114,12 @@ button:hover {
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
 }
-
+ 
 .info-ventana.mostrar {
     display: block; /* Mostrar cuando se añade la clase 'mostrar' */
     transform: translateX(0);
 }
-
+ 
 .info-contenido {
     position: absolute;
     top: 50%;
@@ -112,7 +131,7 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     border-radius: 8px; /* Bordes redondeados */
 }
-
+ 
 .cerrar-ventana {
     position: absolute;
     top: 10px;
@@ -120,24 +139,25 @@ button:hover {
     font-size: 24px;
     cursor: pointer;
 }
-
+ 
 /* Estilos para el botón del carrito */
 .carrito {
-    background-color: #3454d1; /* Color de fondo moderno */
-    color: white;
+    background-color: #f7fe72ff; /* Color de fondo para el botón del carrito */
+    color: #333; /* Color de texto */
     border: none;
     padding: 10px 20px;
     border-radius: 4px; /* Bordes redondeados */
     cursor: pointer;
     transition: background-color 0.3s; /* Transición suave */
-    display: block;
-    margin: 20px auto; /* Centrar el botón */
+    position: absolute;
+    right: 20px;
+    top: 125px; /* Ajustar según sea necesario */
 }
-
+ 
 .carrito:hover {
-    background-color: #2a3e91; /* Cambiar color al pasar el ratón */
+    background-color: #e6e65e; /* Cambiar color al pasar el ratón */
 }
-
+ 
 /* Estilos para la ventana del carrito */
 .carrito-ventana {
     display: none; /* Ocultar por defecto */
@@ -151,12 +171,12 @@ button:hover {
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
 }
-
+ 
 .carrito-ventana.mostrar {
     display: block; /* Mostrar cuando se añade la clase 'mostrar' */
     transform: translateX(0);
 }
-
+ 
 .carrito-contenido {
     position: absolute;
     top: 50%;
@@ -168,7 +188,7 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     border-radius: 8px; /* Bordes redondeados */
 }
-
+ 
 .cerrar-carrito {
     position: absolute;
     top: 10px;
@@ -176,7 +196,7 @@ button:hover {
     font-size: 24px;
     cursor: pointer;
 }
-
+ 
 /* Estilos para los botones de eliminar y añadir */
 .carrito-item {
     display: flex;
@@ -184,7 +204,7 @@ button:hover {
     align-items: center;
     margin-bottom: 10px;
 }
-
+ 
 .carrito-item button {
     background-color: #d9534f; /* Color de fondo para el botón de eliminar */
     color: white;
@@ -194,48 +214,60 @@ button:hover {
     cursor: pointer;
     transition: background-color 0.3s; /* Transición suave */
 }
-
+ 
 .carrito-item button:hover {
     background-color: #c9302c; /* Cambiar color al pasar el ratón */
 }
-
+ 
 .carrito-item .add-more {
     background-color: #5cb85c; /* Color de fondo para el botón de añadir */
 }
-
+ 
 .carrito-item .add-more:hover {
     background-color: #4cae4c; /* Cambiar color al pasar el ratón */
 }
-
+ 
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .cajaDescripcion {
         width: 90%; /* Ancho del 90% en pantallas pequeñas */
     }
-
+ 
     .nav-bar {
         flex-direction: column; /* Disposición en columna en pantallas pequeñas */
+        align-items: center; /* Centrar los elementos */
     }
-
+ 
     .nav-bar li {
         margin: 5px 0; /* Reducir margen */
     }
+ 
+    .carrito {
+        position: static;
+        margin: 20px auto; /* Centrar el botón en pantallas pequeñas */
+    }
 }
-
+ 
 /* Estilos para alinear el texto de los tipos de entrada */
 .descripcion-entrada {
     display: flex;
-    margin: 0 0 20px; /* Añadir margen inferior */
-    justify-content: center;
-    align-items: center; /* Alinear al centro */
-    text-align: center; /* Alinear al centro */
+    justify-content: space-between; /* Alinear los elementos a los extremos */
+    align-items: center; /* Alinear verticalmente al centro */
+    width: 100%;
     margin-bottom: 10px; /* Añadir margen inferior */
 }
-
+ 
 .descripcion-entrada span {
-    margin-bottom: 5px; /* Añadir margen inferior */
+    flex: 1;
+    text-align: left; /* Alinear el texto a la izquierda */
 }
-
+ 
 .descripcion-entrada button {
-    margin-top: 5px; /* Añadir margen superior */
+    margin-left: auto; /* Mover el botón a la derecha */
 }
+ 
+/*Entradas div*/
+.entradasDiv p{
+    width: 50vw;
+}
+ 
