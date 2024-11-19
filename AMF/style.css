@@ -15,33 +15,63 @@ body {
     background-color: #41D3BD;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-135deg, rgb(123,20,95,1) 1%, rgba(0, 0, 0, 1) 100%);
+    overflow-x: hidden;
+}
+
 header {
     text-align: center;
 }
 
 .nav-bar {
-    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    height: 7vh; /* Converted from 55px */
+    padding: 1vh 2.5vw; /* Converted from 8px 20px */
+    display: flex; 
     justify-content: space-between;
     align-items: center;
-    padding: 8px 50px;
-    list-style: none;
-    background: linear-gradient(to left, rgb(175, 29, 136), black);
+    gap: 2vw; /* Converted from 20px */
+    background: linear-gradient(135deg, rgb(175, 29, 136, 1) 25%, rgba(0, 0, 0, 1) 100%);
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 1.25vh 3.125vh rgba(0, 0, 0, 0.5); /* Converted from 10px 25px */
 }
 
 .nav-bar .logo {
-    font-size: xx-large;
-    font-weight: 700;
-    letter-spacing: 8px;
+    margin-right: auto;
+    padding-left: 2.5vw; /* Converted from 20px */
+    font-size: 2em; /* Converted from xx-large */
+    letter-spacing: 0.5em; /* Converted from 8px */
+    font-family: kanit;
+    font-weight: 900;
 }
 
 .nav-bar a {
     color: white;
     text-decoration: none;
-    font-weight: 400;
+    font-family: kanit;
+    padding: 0 1vw; /* Converted from 10px */
+}
+
+.ul-element a {
+    color: white;
+    text-decoration: none;
+    font-family: kanit;
+    font-size: 0.8em;
 }
 
 .cabecera h1 {
+    margin-top: 10vh;
+    color: WHITE;
     font-size: 5rem;
     text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -118,12 +148,19 @@ main {
 
 
 footer {
-    position: absolute; 
-    bottom: 0;  
+      bottom: 0;  
+
     width: 100%; 
-    background-color: black;
-    color: white;
+
+     background-color: black;
+
+      color: white;
+
+       text-align: center;
+
+        padding: 1vh; /* Corrected from 1vb to 1vh */
+
     text-align: center;
-    padding: 1vb;
+    padding: 1vh; /* Corrected from 1vb to 1vh */
 }
     
