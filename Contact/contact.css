@@ -1,30 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .nav-bar {
     list-style: none;
     text-decoration: none;
     margin: 0;
+    height: 55px;
     padding: 8px 8px 8px 8px;
-    display: flex;
-    justify-content: space-around; 
-    background-color: #002500;
+    display: flex; 
+    justify-content: space-between; /* Change to space-between */
+    align-items: center; /* Vertically align items to the center */
+    gap: 60px;
+    background: linear-gradient(to left, rgb(175, 29, 136), black); /* Add gradient */
     color: white;
-    padding: 1vb;
+    padding-right: 50px; /* Adjust this value to move the links to the left */
+}
+
+.nav-bar .logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    padding-left: 30px;
+    font-size: xx-large;
+    letter-spacing: 8px;
+    font-family: kanit;
+    font-weight: 900;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: kanit;
 }
 label{
     font-size: 20px;
 }
-a{
-    text-decoration: none;
-    color: white;
-    size: 0.5rem;
-}
-.nav-bar li {
-    margin-right: 20px;
-}
 
-.nav-bar li:last-child {
-    margin-right: 0;
-}
+
 /*asdfghjklñlkoijuhgfdsxcvbnjkloiuhygfcvbnkkiuyhgtfcvbhnjjuyhgtfrdcvbnjkiuygtfvbnmkiuygtfvbnuytgfvbnjiugfv*/
 .centrado{
     display: flex;
@@ -51,20 +60,20 @@ a{
     outline: none; 
     border-color: rgb(253, 172, 66);
 }
-.contact input[type="submit"] {
-    background-color: rgb(253, 172, 66);
-    color: white;
+.botonEnviar {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 0.8rem 2rem;
     border: none;
     border-radius: 5px;
     font-size: 1.6rem;
     cursor: pointer;
 }
-.contact input[type="submit"]:hover {
-    background-color: rgb(189, 109, 4);
+.botonEnviar:hover {
+    background-color: rgb(255, 255, 255);
 }
 .contact{
-   background-image: linear-gradient(to right, #ff3300, #ff9a4d,#b77700); /* Degradado de izquierda a derecha */
+   background-image: linear-gradient(to right, #e100ff, #76357c,#3e1fea); /* Degradado de izquierda a derecha */
    padding: 40px;
    padding-right: 65px;
    border-radius: 5px;
@@ -72,7 +81,7 @@ a{
         
 }
 body{
-    background-image: url(https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?cs=srgb&dl=pexels-thibault-trillet-44912-167491.jpg&fm=jpg);
+    background-image: url(https://wallpapers.com/images/hd/strip-club-background-1920-x-1080-ejefc6klhykvu0ic.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
