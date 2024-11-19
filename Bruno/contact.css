@@ -4,15 +4,20 @@
     list-style: none;
     text-decoration: none;
     margin: 0;
-    height: 55px;
-    padding: 8px 8px 8px 8px;
+    height: 7vh; /* Converted from 55px */
+    padding: 1vh 2.5vw; /* Converted from 8px 20px */
     display: flex; 
-    justify-content: space-between; /* Change to space-between */
-    align-items: center; /* Vertically align items to the center */
-    gap: 60px;
-    background: linear-gradient(to left, rgb(175, 29, 136), black); /* Add gradient */
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw; /* Converted from 20px */
+    background: linear-gradient(135deg, rgb(175, 29, 136, 1) 25%, rgba(0, 0, 0, 1) 100%);
     color: white;
-    padding-right: 50px; /* Adjust this value to move the links to the left */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 1.25vh 3.125vh rgba(0, 0, 0, 0.5); /* Converted from 10px 25px */
 }
 
 .nav-bar .logo {
@@ -38,7 +43,8 @@ label{
 .centrado{
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 25vb;
+    
     
 }
 .contact label {

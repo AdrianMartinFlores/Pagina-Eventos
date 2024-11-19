@@ -5,7 +5,8 @@ body {
     align-items: center;
     height: 100vh; /* Ocupa toda la altura de la ventana */
     margin: 0;
-    background-color: plum;
+    background-color:rgb(175, 29, 136, 1) ;
+
 }
 
 .container {
