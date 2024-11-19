@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting && !entry.target.classList.contains('roll-in-bottom')) {
                 entry.target.classList.add('roll-in-bottom');
+                entry.target.classList.add('visible');
             }
         });
     }, { threshold: 0.5 }); // Adjust threshold as needed
 
-    document.querySelectorAll('.frameDiv').forEach(frame => {
+    document.querySelectorAll('.frame-container').forEach(frame => {
         observer.observe(frame);
     });
 });
